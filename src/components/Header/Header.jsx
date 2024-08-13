@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../Button/Button";
 import { useTelegram } from "../../hooks/useTelegram";
 
 const Header = (props) => {
@@ -7,7 +6,7 @@ const Header = (props) => {
 
   return (
     <div className={"header"}>
-      {/* <Button onClick={onClose}>Закрыть</Button> */}
+      <button onClick={onClose}>Закрыть</button>
       <span className={"username"}>{user}</span>
     </div>
   );
