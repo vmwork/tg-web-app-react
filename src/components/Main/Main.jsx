@@ -1,12 +1,17 @@
 import React from "react";
-import { useTelegram } from "../../hooks/useTelegram";
+import "./Main.css";
 
+import { useTelegram } from "../../hooks/useTelegram";
+import Button from "../Button/Button";
 const Main = () => {
   const { user } = useTelegram();
 
   return (
-    <div className={"main"}>
-      <span className={"main-user"}>body</span>
+    <div className={"main bg-color-main"}>
+      <div className="main-wrapper">
+        <Button className={"need_help"}>Fight</Button>
+        <Button className={"pizdec"}>ТЦК</Button>
+      </div>
     </div>
   );
 };
