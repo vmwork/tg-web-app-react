@@ -7,10 +7,11 @@ const Header = () => {
 
   return (
     <div className={"header bg-color-main"}>
-      <div className={"user-data flex flex-col items-center	"}>
+      <div
+        className={"user-data flex flex-col items-center justify-items-center	"}
+      >
         <img className="user-photo" src="/logo.webp" alt="" />
         <span className={"username"}>{user?.first_name}</span>
-        <span className={"username"}>sdvsdvs sdvsbv</span>
       </div>
     </div>
   );
