@@ -10,6 +10,7 @@ const Header = () => {
       <div className={"user-data"}>
         <img className="user-photo" src="/logo.webp" alt="" />
         <span className={"username"}>{user?.first_name}</span>
+        <span className={"username"}>sdvsdvs sdvsbv</span>
       </div>
     </div>
   );
