@@ -11,10 +11,6 @@ const Header = () => {
         <img className="user-photo" src="/logo.webp" alt="" />
         <span className={"username"}>{user?.first_name}</span>
       </div>
-
-      <Button className={"bt-close"} onClick={onClose}>
-        Х
-      </Button>
     </div>
   );
 };
