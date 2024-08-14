@@ -9,7 +9,7 @@ const Header = () => {
     <div className={"header bg-color-main"}>
       <div className={"user-data"}>
         <img className="user-photo" src="/logo.webp" alt="" />
-        <span className={"username"}>{user?.firs_name}</span>
+        <span className={"username"}>{user?.first_name}</span>
       </div>
 
       <Button className={"bt-close"} onClick={onClose}>

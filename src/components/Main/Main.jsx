@@ -6,7 +6,7 @@ const Main = () => {
 
   return (
     <div className={"main"}>
-      <span className={"main-user"}>{user?.username}</span>
+      <span className={"main-user"}>body</span>
     </div>
   );
 };
