@@ -8,3 +8,20 @@
 .username{
     margin-left: auto;
 }
+.bg-color-main{
+    background-color: #557517;
+}
+.bt-close{
+    font-size: 32px;
+    margin-left: auto;
+}
+.user-photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
