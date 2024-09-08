@@ -46,7 +46,7 @@ const Main = () => {
           </button>
         </div>
       )}
-      {isLoading && (
+      {!isLoading && (
         <div className="spiner">
           <svg
             xmlns="http://www.w3.org/2000/svg"
