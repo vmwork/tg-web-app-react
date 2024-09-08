@@ -11,7 +11,6 @@ function App() {
   eruda.init();
   useEffect(() => {
     tg.ready();
-    console.log(tg);
   });
 
   return (
