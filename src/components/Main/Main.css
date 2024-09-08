@@ -40,8 +40,8 @@ background-color: rgb(28, 186, 7);
 }
 .spiner{
     position: absolute;
-    width: 50%;
-  height: 50%;
+    width: 48%;
+  height: 80%;
   overflow: auto;
   margin: auto;
   position: absolute;
