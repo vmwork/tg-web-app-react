@@ -11,7 +11,6 @@ const Header = () => {
       <div
         className={"user-data flex flex-col items-center justify-items-center	"}
       >
-        <button onClick={onClose}>Закрыть</button>
         <img className="user-photo" src="/logo.webp" alt="" />
         <span className={"username"}>{user?.first_name}</span>
       </div>
