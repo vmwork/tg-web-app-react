@@ -10,6 +10,7 @@ const Main = () => {
   const { user } = useTelegram();
   const { sendAlert } = useSendAlert();
   const eventHandler = () => {
+    console.log(user);
     sendAlert(user);
   };
   return (
