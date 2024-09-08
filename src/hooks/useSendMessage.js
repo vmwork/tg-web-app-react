@@ -1,7 +1,8 @@
 import { Api } from "./api/api";
+import { useTelegram } from "../../hooks/useTelegram";
 
 export function useSendMessage(data) {
-  // const { user } = useTelegram();
+  const { user } = useTelegram();
   const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, APIMessage } = Api();
   const sendMessage = async () => {
     try {
