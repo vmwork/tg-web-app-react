@@ -13,7 +13,7 @@ const Main = () => {
   return (
     <div className={"main bg-color-main"}>
       <div className="main-wrapper">
-        <Button onClick={sendAlert} className={"pizdec"}>
+        <Button onClick={sendAlert(user)} className={"pizdec"}>
           ТЦК
         </Button>
       </div>

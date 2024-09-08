@@ -1,8 +1,6 @@
 import { Api } from "./api/api";
-import { useTelegram } from "../../hooks/useTelegram";
 
-export function useSendMessage(data) {
-  const { user } = useTelegram();
+export function useSendMessage(user) {
   const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, APIMessage } = Api();
   const sendMessage = async () => {
     try {
@@ -13,7 +11,7 @@ export function useSendMessage(data) {
         },
         body: JSON.stringify({
           chat_id: TELEGRAM_CHAT_ID,
-          text: `${user.first_name}, просит помощи, напали сотрудники ТЦК`,
+          text: `${user}, просит помощи, напали сотрудники ТЦК`,
         }),
       });
     } catch (error) {
