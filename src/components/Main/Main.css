@@ -8,8 +8,8 @@
 .pizdec {
   width: 250px;
   height: 250px;
+  border-radius: 50%;
 }
 img{
     border-radius: 50%;
-
 }
