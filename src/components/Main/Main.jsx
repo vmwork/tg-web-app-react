@@ -10,8 +10,7 @@ const Main = () => {
   const { user } = useTelegram();
   const { sendAlert } = useSendAlert();
   const eventHandler = () => {
-    console.log(user);
-    sendAlert(user);
+    sendAlert(user.first_name);
   };
   return (
     <div className={"main bg-color-main"}>
