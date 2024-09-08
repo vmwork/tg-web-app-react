@@ -2,6 +2,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  position: relative;
   /* align-items: center; */
 }
 .need_help,
@@ -12,4 +13,33 @@
 }
 img{
     border-radius: 50%;
+}
+
+.message{
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    width: 50%;
+    display: flex; justify-content: center;
+    padding: 50px;
+    border-radius: 20px;
+}
+.close{
+    position: absolute;
+    right: 20px;
+    top:10px;
+    font-size: 24px;
+    
+}
+.good{
+background-color: rgb(28, 186, 7);
+
+}
+.warning{
+    background-color: brown;
+}
+.spiner{
+    position: absolute;
+    top: 90px;
+    left: 41%;
 }
