@@ -17,7 +17,9 @@ export function useSendMessage(data) {
         },
         body: JSON.stringify({
           chat_id: TELEGRAM_CHAT_ID,
-          text: "text",
+          name: user.first_name,
+          username: user.username,
+          messadge: "Прошу помощи, напали сотрудники ТЦК",
         }),
       });
     } catch (error) {
