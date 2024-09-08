@@ -9,14 +9,7 @@ import Button from "../Button/Button";
 const Main = () => {
   const { user } = useTelegram();
   const { sendAlert } = useSendAlert();
-  const getLocation = () => {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      console.log(position.coords.latitude, position.coords.longitude);
-    });
-  };
-  useEffect(() => {
-    getLocation();
-  }, []);
+
   return (
     <div className={"main bg-color-main"}>
       <div className="main-wrapper">
