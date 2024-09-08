@@ -1,8 +1,8 @@
 import { Api } from "./api/api";
 
-export function useSendMessage(user) {
+export function useSendMessage() {
   const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, APIMessage } = Api();
-  const sendMessage = async () => {
+  const sendMessage = async (user) => {
     try {
       const response = await fetch(APIMessage, {
         method: "POST",
