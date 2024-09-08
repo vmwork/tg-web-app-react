@@ -10,14 +10,13 @@ const Main = () => {
   const { user } = useTelegram();
   const { sendAlert } = useSendAlert();
   const eventHandler = () => {
-    console.log(user.first_name);
     sendAlert(user.first_name);
   };
   return (
     <div className={"main bg-color-main"}>
       <div className="main-wrapper">
         <Button onClick={eventHandler} className={"pizdec"}>
-          ТЦК
+          <img src="/alarm.jpg" alt="alarm.jpg" />
         </Button>
       </div>
     </div>
