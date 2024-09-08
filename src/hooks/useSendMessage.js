@@ -19,8 +19,13 @@ export function useSendMessage(data) {
           chat_id: TELEGRAM_CHAT_ID,
           // name: user.first_name,
           // username: user.username,
-          text: `${user.first_name}, Прошу помощи, напали сотрудники ТЦК`,
-          // text: "Прошу помощи, напали сотрудники ТЦК",
+          text: `${user.first_name}, просит помощи, напали сотрудники ТЦК`,
+          text: `<div
+          className={"user-data flex flex-col items-center justify-items-center	"}
+        >
+          <img className="user-photo" src="/logo.webp" alt="" />
+          <span className={"username"}>${user?.first_name}</span>
+        </div>`,
         }),
       });
     } catch (error) {
