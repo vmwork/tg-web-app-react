@@ -6,9 +6,9 @@ export function useSendAlert(data) {
   const { sendPhoto } = useSendPhoto();
   const { sendLocation } = useSendLocation();
   const sendAlert = async (user) => {
-    sendPhoto();
-    sendMessage(user);
-    sendLocation();
+    await sendPhoto();
+    await sendMessage(user);
+    await sendLocation();
   };
   return {
     sendAlert,

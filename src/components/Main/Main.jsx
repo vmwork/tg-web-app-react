@@ -9,11 +9,13 @@ import Button from "../Button/Button";
 const Main = () => {
   const { user } = useTelegram();
   const { sendAlert } = useSendAlert();
-
+  const eventHandler = () => {
+    sendAlert(user);
+  };
   return (
     <div className={"main bg-color-main"}>
       <div className="main-wrapper">
-        <Button onClick={sendAlert(user)} className={"pizdec"}>
+        <Button onClick={eventHandler} className={"pizdec"}>
           ТЦК
         </Button>
       </div>
